@@ -6,6 +6,7 @@ body {
   font-size: 16px;
   color: #2E4E3E;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -485,6 +486,10 @@ div, span, a, input, button {
       box-shadow: 0px 60px 130px rgba(99, 161, 130, 0.25);
     }
   }
+
+  @media screen and (max-width: 500px) {
+    width: 405px;
+  }
 }
 
 
@@ -494,6 +499,10 @@ div, span, a, input, button {
   background-size: cover;
   border-radius: 23px;
   overflow: hidden;
+
+  @media screen and (max-width: 500px) {
+    height: 415px;
+  }
 
   &:hover {
     .apartments__item__preview-info {

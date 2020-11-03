@@ -4,7 +4,8 @@ body {
   padding: 0;
   font-size: 16px;
   color: #2E4E3E;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
 
 ul, li {
   margin: 0;
@@ -469,6 +470,9 @@ div, span, a, input, button {
   .apartments__item:hover .apartments__item__preview {
     -webkit-box-shadow: 0px 60px 130px rgba(99, 161, 130, 0.25);
     box-shadow: 0px 60px 130px rgba(99, 161, 130, 0.25); }
+  @media screen and (max-width: 500px) {
+    .apartments__item {
+      width: 405px; } }
 
 .apartments__item__preview {
   width: 100%;
@@ -476,6 +480,9 @@ div, span, a, input, button {
   background-size: cover;
   border-radius: 23px;
   overflow: hidden; }
+  @media screen and (max-width: 500px) {
+    .apartments__item__preview {
+      height: 415px; } }
   .apartments__item__preview:hover .apartments__item__preview-info {
     opacity: 1;
     -webkit-transition: .3s ease-out;
