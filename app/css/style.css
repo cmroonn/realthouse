@@ -418,7 +418,8 @@ div, span, a, input, button {
     max-width: 190px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1em; }
+    font-size: 1em;
+    font-weight: 700; }
   .offer__item a {
     position: absolute;
     top: 0;
