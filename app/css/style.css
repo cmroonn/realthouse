@@ -617,7 +617,7 @@ div, span, a, input, button {
   @media screen and (max-width: 1070px) {
     .company__about {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr .45fr;
       -webkit-column-gap: 0;
       -moz-column-gap: 0;
       column-gap: 0; } }
@@ -882,6 +882,9 @@ div, span, a, input, button {
 
 .questions__form__btn {
   margin: auto; }
+  @media screen and (max-width: 400px) {
+    .questions__form__btn {
+      width: 250px; } }
 
 .contacts {
   padding-top: 0;
@@ -911,11 +914,19 @@ div, span, a, input, button {
       margin: 0 auto 80px;
       width: 445px;
       padding: 90px 40px; } }
+  @media screen and (max-width: 480px) {
+    .map__block {
+      width: 100%;
+      padding: 90px 25px;
+      height: unset; } }
 
 .map__block__title {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 45px; }
+  @media screen and (max-width: 480px) {
+    .map__block__title {
+      font-size: 26px; } }
 
 .map-tablet {
   display: none; }
@@ -932,6 +943,9 @@ div, span, a, input, button {
 
 .map__block__items {
   padding-left: 45px; }
+  @media screen and (max-width: 480px) {
+    .map__block__items {
+      padding-left: 40px; } }
 
 .map__block__items li span {
   display: block; }
@@ -997,6 +1011,14 @@ div, span, a, input, button {
   -moz-column-gap: 60px;
   column-gap: 60px;
   margin-top: 50px; }
+  @media screen and (max-width: 992px) {
+    .footer__nav {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 60px; } }
+  @media screen and (max-width: 550px) {
+    .footer__nav {
+      grid-template-columns: 1fr;
+      row-gap: 40px; } }
 
 .footer__nav-item {
   font-size: 11px; }

@@ -658,7 +658,7 @@ div, span, a, input, button {
 
   @media screen and (max-width: 1070px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .45fr;
     column-gap: 0;
   }
 }
@@ -933,6 +933,10 @@ div, span, a, input, button {
 
 .questions__form__btn {
   margin: auto;
+
+  @media screen and (max-width: 400px) {
+    width: 250px;
+  }
 }
 
 .contacts {
@@ -967,12 +971,22 @@ div, span, a, input, button {
     width: 445px;
     padding: 90px 40px;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 90px 25px;
+    height: unset;
+  }
 }
 
 .map__block__title {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 45px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+  }
 }
 
 .map-tablet {
@@ -995,6 +1009,9 @@ div, span, a, input, button {
 
 .map__block__items {
   padding-left: 45px;
+  @media screen and (max-width: 480px) {
+    padding-left: 40px;
+  }
 }
 
 .map__block__items li span {
@@ -1081,6 +1098,16 @@ div, span, a, input, button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 60px;
   margin-top: 50px;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 60px;
+  }
+
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
 }
 
 
