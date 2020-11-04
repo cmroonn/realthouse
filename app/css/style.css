@@ -469,6 +469,9 @@ div, span, a, input, button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .offer__image-wrap {
+      margin-bottom: 5px; } }
 
 .offer__decor {
   margin-left: 90px; }
