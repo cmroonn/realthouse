@@ -481,7 +481,7 @@ div, span, a, input, button {
 
 @media screen and (max-width: 768px) {
   .apartments__content {
-    padding-left: 20px; } }
+    padding-left: 10px; } }
 
 .apartments__item {
   width: 460px;
@@ -493,6 +493,9 @@ div, span, a, input, button {
   @media screen and (max-width: 500px) {
     .apartments__item {
       width: 405px; } }
+  @media screen and (max-width: 420px) {
+    .apartments__item {
+      width: 300px; } }
 
 .apartments__item__preview {
   width: 100%;
@@ -503,6 +506,9 @@ div, span, a, input, button {
   @media screen and (max-width: 500px) {
     .apartments__item__preview {
       height: 415px; } }
+  @media screen and (max-width: 420px) {
+    .apartments__item__preview {
+      height: 310px; } }
   .apartments__item__preview:hover .apartments__item__preview-info {
     opacity: 1;
     -webkit-transition: .3s ease-out;
@@ -552,6 +558,9 @@ div, span, a, input, button {
   padding: 0 3px; }
   .apartments__item__bottom p:last-child {
     text-align: right; }
+  @media screen and (max-width: 420px) {
+    .apartments__item__bottom {
+      font-size: 11px; } }
 
 .apartments__heading {
   margin-bottom: 90px; }

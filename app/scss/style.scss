@@ -491,7 +491,7 @@ div, span, a, input, button {
   }
 
   @media screen and (max-width: 768px) {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -508,6 +508,10 @@ div, span, a, input, button {
   @media screen and (max-width: 500px) {
     width: 405px;
   }
+
+  @media screen and (max-width: 420px) {
+    width: 300px;
+  }
 }
 
 
@@ -520,6 +524,10 @@ div, span, a, input, button {
 
   @media screen and (max-width: 500px) {
     height: 415px;
+  }
+
+  @media screen and (max-width: 420px) {
+    height: 310px;
   }
 
   &:hover {
@@ -568,6 +576,10 @@ div, span, a, input, button {
     &:last-child {
       text-align: right;
     }
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 11px;
   }
 }
 
