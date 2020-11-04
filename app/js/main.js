@@ -4,6 +4,8 @@ $(document).ready(function() {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
     $('.apartments__content').slick({
@@ -11,6 +13,8 @@ $(document).ready(function() {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
     $('.offer__item').mouseover(function() {
