@@ -324,6 +324,10 @@ div, span, a, input, button {
   font-weight: 700; }
   .main-screen__title span {
     font-weight: 400; }
+  @media screen and (max-width: 500px) {
+    .main-screen__title {
+      max-width: unset;
+      text-align: center; } }
 
 .main-screen__image {
   position: absolute;
@@ -385,6 +389,9 @@ div, span, a, input, button {
 .block-heading {
   font-size: 1.875rem;
   font-weight: 700; }
+  @media screen and (max-width: 500px) {
+    .block-heading {
+      text-align: center; } }
 
 .offer {
   margin: 160px 0 50px; }
@@ -596,6 +603,9 @@ div, span, a, input, button {
     background: linear-gradient(180deg, #A2C973 0%, rgba(91, 162, 122, 0) 100%), linear-gradient(0deg, #5BA27A, #5BA27A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+    @media screen and (max-width: 500px) {
+      .company__digits-wrap p {
+        margin: auto; } }
   @media screen and (max-width: 1070px) {
     .company__digits-wrap {
       grid-template-columns: 1fr;
@@ -629,9 +639,6 @@ div, span, a, input, button {
       .company__digits__digit:nth-child(2) {
         padding-top: 0;
         justify-self: center; } }
-    @media screen and (max-width: 500px) {
-      .company__digits__digit:nth-child(2) {
-        justify-self: flex-start; } }
   .company__digits__digit:last-child {
     padding-top: 200px;
     padding-left: 85px; }
@@ -644,7 +651,12 @@ div, span, a, input, button {
         justify-self: flex-end; } }
     @media screen and (max-width: 500px) {
       .company__digits__digit:last-child {
-        justify-self: flex-start; } }
+        justify-self: center; } }
+  @media screen and (max-width: 500px) {
+    .company__digits__digit {
+      justify-self: center;
+      text-align: -webkit-center;
+      text-align: center; } }
 
 .company__about {
   font-size: 14px;

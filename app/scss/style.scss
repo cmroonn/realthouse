@@ -335,6 +335,11 @@ div, span, a, input, button {
   span {
     font-weight: 400;
   }
+
+  @media screen and (max-width: 500px) {
+    max-width: unset;
+    text-align: center;
+  }
 }
 
 
@@ -400,6 +405,11 @@ div, span, a, input, button {
 .block-heading {
   font-size: 1.875rem;
   font-weight: 700;
+
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 }
 
 .offer {
@@ -626,6 +636,10 @@ div, span, a, input, button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @media screen and (max-width :500px) {
+      margin: auto;
+    }
+
   }
 
   @media screen and (max-width: 1070px) {
@@ -669,9 +683,7 @@ div, span, a, input, button {
       justify-self: center;
     }
 
-    @media screen and (max-width: 500px) {
-      justify-self: flex-start;
-    }
+
   }
 
   &:last-child {
@@ -688,8 +700,15 @@ div, span, a, input, button {
     }
 
     @media screen and (max-width: 500px) {
-      justify-self: flex-start;
+      justify-self: center;
     }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    justify-self: center;
+    text-align: -webkit-center;
+    text-align: center;
   }
 }
 
