@@ -424,6 +424,7 @@ div, span, a, input, button {
   width: 310px;
   height: 315px;
   background: #effdf6;
+  border: 7px solid transparent;
   border-radius: 25px;
   -webkit-transition: .2s;
   -o-transition: .2s;
@@ -450,15 +451,16 @@ div, span, a, input, button {
     right: 0;
     outline: none; }
   .offer__item.hover {
-    -webkit-box-shadow: 0px 60px 100px rgba(99, 161, 130, 0.5);
-    box-shadow: 0px 60px 100px rgba(99, 161, 130, 0.5);
+    -webkit-box-shadow: 0px 50px 85px rgba(99, 161, 130, 0.5);
+    box-shadow: 0px 50px 85px rgba(99, 161, 130, 0.5);
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
-    z-index: 1; }
+    z-index: 1;
+    border-color: #83C7AB; }
 
 .offer__image-wrap {
   width: 100px;

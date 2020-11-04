@@ -441,6 +441,7 @@ div, span, a, input, button {
   width: 310px;
   height: 315px;
   background: rgba(239, 253, 246, 1);
+  border: 7px solid transparent;
   border-radius: 25px;
   transition: .2s;
   margin-right: 22px;
@@ -470,10 +471,11 @@ div, span, a, input, button {
 
 
   &.hover {
-    box-shadow: 0px 60px 100px rgba(99, 161, 130, 0.5);
+    box-shadow: 0px 50px 85px rgba(99, 161, 130, 0.5);
     transition: .2s;
     transform: scale(1.05);
     z-index: 1;
+    border-color: #83C7AB;
   }
 }
 
