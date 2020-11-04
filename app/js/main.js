@@ -2,11 +2,15 @@ $(document).ready(function() {
     $('.offer__content').slick({
         variableWidth: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
 
     $('.apartments__content').slick({
         variableWidth: true,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
     });
 
     $('.offer__item').mouseover(function() {
@@ -80,5 +84,15 @@ $(document).ready(function() {
             scrollTop: 0
         }, 600);
         return false;
+    });
+
+
+    $("#cap").removeClass("default");
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 60) {
+            $("#cap").addClass("sticky-cap").fadeIn('fast');
+        } else {
+            $("#cap").removeClass("sticky-cap").fadeIn('fast');
+        };
     });
 });

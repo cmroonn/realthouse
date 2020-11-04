@@ -118,7 +118,15 @@ div, span, a, input, button {
   padding: 15px 0; }
 
 .sticky-cap {
-  background: #E0EEEA; }
+  background: #E0EEEA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .header__percents {
   padding: 25px 0 25px 25px; }
@@ -367,6 +375,9 @@ div, span, a, input, button {
   @media screen and (max-width: 1070px) {
     .main-screen__btn {
       margin-bottom: 150px; } }
+  @media screen and (max-width: 768px) {
+    .main-screen__btn {
+      margin: 50px auto 150px; } }
 
 .block-heading {
   font-size: 1.875rem;
@@ -433,7 +444,11 @@ div, span, a, input, button {
     box-shadow: 0px 60px 130px rgba(99, 161, 130, 0.25);
     -webkit-transition: .2s;
     -o-transition: .2s;
-    transition: .2s; }
+    transition: .2s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 1; }
 
 .offer__image-wrap {
   width: 100px;
@@ -458,13 +473,15 @@ div, span, a, input, button {
 .apartments {
   margin-bottom: 50px; }
 
-.apartments__content {
-  padding-left: 20px; }
-  .apartments__content .slick-list {
-    padding-bottom: 100px; }
+.apartments__content .slick-list {
+  padding-bottom: 100px; }
+
+@media screen and (max-width: 768px) {
+  .apartments__content {
+    padding-left: 20px; } }
 
 .apartments__item {
-  width: 490px;
+  width: 460px;
   margin-right: 25px;
   outline: none; }
   .apartments__item:hover .apartments__item__preview {
@@ -476,7 +493,7 @@ div, span, a, input, button {
 
 .apartments__item__preview {
   width: 100%;
-  height: 500px;
+  height: 480px;
   background-size: cover;
   border-radius: 23px;
   overflow: hidden; }
@@ -526,9 +543,10 @@ div, span, a, input, button {
 .apartments__item__bottom {
   display: grid;
   grid-template-columns: 1fr .4fr;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
-  margin-top: 12px; }
+  margin-top: 12px;
+  padding: 0 3px; }
   .apartments__item__bottom p:last-child {
     text-align: right; }
 
@@ -629,6 +647,11 @@ div, span, a, input, button {
       -moz-column-gap: 0;
       column-gap: 0; } }
 
+.company__about-wrap {
+  background: url("../img/bg-wave-woman.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 0; }
+
 @media screen and (max-width: 1070px) {
   .company__about__woman {
     display: -webkit-box;
@@ -678,9 +701,9 @@ div, span, a, input, button {
     margin: 0;
     line-height: 1;
     font-size: 1em;
-    font-weight: 500; }
+    font-weight: 700; }
     .company__about__woman__info p span {
-      font-weight: 100;
+      font-weight: 400;
       margin-bottom: 5px; }
   @media screen and (max-width: 1070px) {
     .company__about__woman__info {
@@ -762,25 +785,10 @@ div, span, a, input, button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .why__point__icon .hover-circle {
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s;
-    -webkit-box-shadow: 0px 10px 30px #B0D172;
-    box-shadow: 0px 10px 30px #B0D172;
-    -webkit-filter: drop-shadow(0px 10px 30px #B0D172);
-    filter: drop-shadow(0px 10px 30px #B0D172); }
-  .why__point__icon svg:hover .hover-circle {
-    fill: #4D9B7B;
-    -webkit-box-shadow: 0px 10px 30px #B0D172;
-    box-shadow: 0px 10px 30px #B0D172;
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s; }
 
 .why__point p {
   font-size: 1em;
-  font-weight: 500; }
+  font-weight: 700; }
 
 .why__point:nth-child(2) p, .why__point:nth-child(2) .why__point__icon {
   max-width: 250px;
@@ -794,6 +802,17 @@ div, span, a, input, button {
     margin: auto; }
     .why__point:last-child p {
       max-width: 290px; } }
+
+.why__point .hover-circle {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.why__point:hover .hover-circle {
+  fill: #4D9B7B;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
 
 .questions {
   background: url("../img/question-bg.png") no-repeat;
@@ -895,7 +914,7 @@ div, span, a, input, button {
 
 .contacts {
   padding-top: 0;
-  background: url(https://zalogdoverie.ru/wp-content/themes/doverie/img/map.jpg) no-repeat 50% 50%/cover; }
+  background: url("../img/map.png") no-repeat 50% 50%/cover; }
   @media screen and (max-width: 1200px) {
     .contacts {
       background-position: 43% 50%; } }
@@ -945,7 +964,7 @@ div, span, a, input, button {
 
 .map__block__items li {
   margin-bottom: 25px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative; }
 
 .map__block__items {
